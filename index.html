@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>The Listening Room</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="lamp" aria-hidden="true"></div>
+  <header class="mast">
+    <div>
+      <p class="eyebrow">Private collection</p>
+      <h1>The Listening Room</h1>
+    </div>
+    <label class="search-wrap">
+      <span class="search-label">Ask the clerk</span>
+      <input id="q" type="search" placeholder="artist, song, producer, studio, year…" autocomplete="off" />
+    </label>
+    <div class="service-bar">
+      <span class="search-label">Your service</span>
+      <div class="service-picks" id="servicePicks"></div>
+    </div>
+  </header>
+  <div class="clerk" id="filters"></div>
+  <p class="count" id="count"></p>
+  <section class="crate-wrap">
+    <p class="crate-hint">Flip through the crate. Tap a jacket to pull it out.</p>
+    <div class="crate" id="bin" aria-label="Record crate"></div>
+  </section>
+  <div class="plinth">
+    <div class="turntable" id="plinthIdle" aria-hidden="true">
+      <div class="platter"></div>
+      <div class="spindle"></div>
+      <div class="arm"></div>
+    </div>
+    <p class="plinth-copy">Pull a record. Hold it. Flip it. Drop the needle.</p>
+  </div>
+  <div class="stage" id="stage" hidden>
+    <button class="ghost close" id="close">Put it back</button>
+    <div class="hold">
+      <div class="album-rig" id="rig">
+        <div class="album" id="album">
+          <div class="face front" id="faceFront"></div>
+          <div class="face back" id="faceBack"></div>
+        </div>
+      </div>
+      <p class="hold-hint">Swipe or tap the jacket to turn it.</p>
+      <div class="hand-controls">
+        <button id="flip">Turn it over</button>
+        <button id="near">Bring closer</button>
+        <button id="far">Step back</button>
+        <div class="views" id="viewBtns"></div>
+      </div>
+    </div>
+    <aside class="dossier" id="dossier"></aside>
+    <div class="deck">
+      <div class="turntable live">
+        <div class="platter spinning" id="platter"></div>
+        <div class="spindle"></div>
+        <div class="arm down" id="arm"></div>
+      </div>
+      <div class="needle-row" id="needleRow"></div>
+    </div>
+  </div>
+  <script src="data.js"></script>
+  <script src="photo-crate.js"></script>
+  <script src="list-catalog.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
