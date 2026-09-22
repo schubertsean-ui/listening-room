@@ -1,7 +1,6 @@
 # The Listening Room
 
-A public crate of a family record collection.
+Open on a phone:
+https://cdn.jsdelivr.net/gh/schubertsean-ui/listening-room@main/index.html
 
-Open: https://schubertsean-ui.github.io/listening-room/
-
-Flip through jackets. Pull one out. Turn it over. Drop the needle on **your** service — Spotify, Apple Music, YouTube Music, Amazon Music, or Tidal. The site remembers the last service you chose.
+Flip through jackets. Pull one out. Pinch to bring the cover closer. Swipe or tap to turn it over. Drop the needle on your own service.
